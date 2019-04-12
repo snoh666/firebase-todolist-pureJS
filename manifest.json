@@ -1,0 +1,14 @@
+{
+  "name": "Todos new cart extension",
+  "version": "0.1",
+  "default_locale": "en",
+  "description": "A plain text description",
+  "author": "Mikolaj Snochowski",
+
+  "chrome_url_overrides" : {
+    "pageToOverride": "chrome://newtab"
+  },
+  "background": {
+    "persistent": false
+  }
+}

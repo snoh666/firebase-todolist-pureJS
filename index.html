@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Tab</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="site">
+      <div class="newTaskBox display">
+        <span>Close</span>
+        <p>
+          <input type="text" id="taskValue" placeholder="Task Value" autocomplete="off">
+        </p>
+        <button id="post">Add</button>
+      </div>
+      <div class="col">
+        <h1>To do list:</h1>
+        <ul id="resultList">
+          <!--Input list by js with firebase result-->
+        </ul>
+        <div class="add">
+          <button id="newTask">Add task</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        //Your own firebase config object
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
